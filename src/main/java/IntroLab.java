@@ -1,6 +1,8 @@
 /**
  * This file contains a few exercises to familiarize you with Java.
  * <p>
+ * You should read this file from top-to-bottom. Any tasks you are to complete
+ * are labelled with TODO!
  */
 
 public class IntroLab {
@@ -8,6 +10,7 @@ public class IntroLab {
     /**
      * Returns a message depending on the given greeting, name, message, and
      * whether the caller likes cats or dogs more.
+     *
      * Do NOT change this method!
      *
      * @param greeting   A string with a greeting (e.g. "Hello", "Hey")
@@ -30,19 +33,39 @@ public class IntroLab {
         return message_to_print + message;
     }
 
-    public static String chopra75(boolean likes_dogs) {
-        if (likes_dogs) {
-            return printLabMessage("Hello there!", "\"the Professor\"", false, "Do you have any reservations?");
-        } else {
-            return printLabMessage("Hello there!", "\"the Professor\"", true, "Deal with it.");
-        }
+    /* TODO: In the space below, write your our method.
+     *       The method should be named with your utorID and should call
+     *       printLabMessage with some parameters.
+     *
+     * As a reference, we've provided the sample method exampleStudent.
+     * Make sure you document your method properly!
+     */
+
+    public static String malikh37(){
+        return printLabMessage("Hi!", "Haris", true,"How are you doing?");
     }
+
+    /**
+     * An example method that calls on printLabMessage.
+     */
+    public static String exampleStudent() {
+        return printLabMessage("Hello", "Stu Dent", true,
+                "Welcome to CSC207!");
+    }
+
 
     public static void main(final String[] args) {
-        String a = chopra75(true);
-        String b = chopra75(false);
-        System.out.println(a); // runs case a - true
-        System.out.println(b); // runs case b - false
+        System.out.println(exampleStudent());
 
+        /* TODO: Add a call to the method you wrote in this main method,
+         *        and print the results of it.
+         *
+         * As a reference, we've provided a sample call to exampleStudent
+         * above. Afterwards: run this file to see the output!
+         */
+        System.out.println(malikh37());
     }
+
+    // TODO: Go to test/java/IntroLabTest.java afterwards and complete the TODO.
+
 }
